@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratan Kumar | Portfolio</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./images/favicon.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-white">
+    <!-- Header -->
+    <header id="top" class="bg-gradient-to-r from-sky-500 to-pink-500 text-white">
+        <nav class="border-b-2">
+            <!-- Laptop Navbar -->
+            <div class="flex p-5 justify-between items-center">
+                <h1 class="text-xl font-bold">Ratan Kumar</h1>
+                <ul class="sm:flex hidden items-center justify-between">
+                    <li>
+                        <a href="#about" class="mr-5 font-semibold hover:text-green-400">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="mr-5 font-semibold hover:text-green-400">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="mr-5 font-semibold hover:text-green-400">Contact</a>
+                    </li>
+                    <button
+                        class="bg-white text-sm font-semibold shadow-xl hover:shadow-md text-pink-500 hover:text-pink-600 rounded-full px-3 py-2">
+                        <a href="./Ratan Kumar Resume.pdf">Download Resume</a>
+                    </button>
+                </ul>
+                <div class="block sm:hidden cursor-pointer" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <!-- Mobile Navbar -->
+            <div id="mobile-menu" class="py-5 sm:py-0 hidden">
+                <ul class="flex flex-col sm:hidden items-center">
+                    <li class="mb-5 hover:text-green-400">
+                        <a href="#about" class="font-semibold">About</a>
+                    </li>
+                    <li class="mb-5 hover:text-green-400">
+                        <a href="#projects" class="font-semibold">Projects</a>
+                    </li>
+                    <li class="mb-5 hover:text-green-400">
+                        <a href="#contact" class="font-semibold">Contact</a>
+                    </li>
+                    <button
+                        class="bg-white text-sm font-semibold shadow-xl hover:shadow-md text-pink-500 hover:text-pink-600 rounded-full px-3 py-2">Download
+                        Resume
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 bg-gradient-to-r from-sky-500 to-pink-500 text-white rounded-bl-[100px]">
+        <h1 class="px-10 mb-5 text-2xl md:text-4xl font-bold">Full-Stack Developer by Day, Dream Coder by Night</h1>
+        <p class="px-10 mb-5 text-base md:text-lg">Welcome to my personal portfolio. I'm a passionate developer with
+            a focus on creating engaging user experiences.
+        </p>
+        <button
+            class="mr-2 bg-white text-sm font-semibold shadow-xl hover:shadow-md text-pink-500 hover:text-pink-600 rounded-full px-3 py-2">
+            <a href="#contact">Hire Me</a>
+        </button>
+        <button
+            class="ml-2 bg-white text-sm font-semibold shadow-xl hover:shadow-md text-pink-500 hover:text-pink-600 rounded-full px-3 py-2">
+            <a href="./Ratan Kumar Resume.pdf">Resume</a>
+        </button>
+    </section>
+
+    <!-- What i Do -->
+    <section
+        class="text-center bg-gradient-to-r from-sky-500 to-pink-500 bg-clip-text text-transparent py-20 px-5 md:px-20">
+        <h1 class="text-2xl  font-extrabold pb-3">What I Do</h1>
+        <p class="text-base">I specialize in crafting sleek, intuitive web applications and digital experiences. Here
+            are a few technologies I've been working with:
+        </p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 text-start text-black font-semibold mt-20">
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>HTML And CSS</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>JavaScript</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>Bootstrap</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 35%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>Tailwind CSS</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>React Js</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 65%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>Node Js</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 45%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>Express Js</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 45%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>MongoDB</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 45%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>Web Developement</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>Python</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>Python Flask</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 60%"></div>
+                </div>
+            </div>
+            <div class="bg-gray-200 rounded-md p-5 hover:scale-105 ease-in-out">
+                <h1>Data Science</h1>
+                <div class="w-full bg-gray-100 rounded-full h-2.5 mt-5">
+                    <div class="bg-gradient-to-r from-sky-500 to-pink-500 h-2.5 rounded-full" style="width: 65%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section id="about"
+        class="p-10 flex justify-center items-center flex-col text-center bg-gradient-to-r from-sky-500 to-pink-500 text-white rounded-tr-[100px] rounded-bl-[100px]">
+        <img class="rounded-full h-60 w-60 text-center mb-10 shadow-lg hover:scale-110 ease-in-out"
+            src="./images/ratan1.webp" alt="ratanImg">
+        <h1 class="text-2xl  font-extrabold pb-3">About Us</h1>
+        <p class="text-center md:px-20 ">Hi, my name is Ratan Kumar, and I’m pursuing a B.Sc. in Computer Science and
+            Data
+            Analysis at IIT Patna. I’m
+            passionate about web development and have built projects using HTML, CSS, JavaScript, SQLAlchemy, and Python
+            Flask. Some of my projects include an inventory management system and a smart attendance system using face
+            recognition. My goal is to become a full-stack web developer and work on real-world web applications.
+        </p>
+    </section>
+
+    <!-- My Projects -->
+    <section id="projects"
+        class="text-center bg-gradient-to-r from-sky-500 to-pink-500 bg-clip-text text-transparent py-20 px-5 md:px-20">
+        <h1 class="text-2xl  font-extrabold pb-3">My Projects</h1>
+        <p class="text-base">
+            Here are a few projects I've been working on. You can check them out on GitHub.
+        </p>
+        <!-- cards -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center text-black mt-20">
+            <!-- card 1 -->
+            <div class="bg-gray-200 p-5 rounded-lg hover:rotate-2 ease-in-out delay-150">
+                <img class="rounded-lg bg-cover" src="./images/kisan-motor-billing-dark.webp" alt="ratanImg">
+                <h1 class="text-lg md:text-xl py-4 font-mono font-semibold">Inventory Management System</h1>
+                <p class="pb-5 text-base font-serif">
+                    This project helps shop owners track stock levels, manage product details, set reorder thresholds,
+                    and generate reports with ease. The system supports user-friendly CRUD operations, category-wise
+                    sorting, priority labels, and responsive UI for both desktop and mobile use.
+                </p>
+                <p class="pb-5 text-base font-serif">
+                    <strong>Tech Stack:</strong> Flask, SQLite, SQLAlchemy, Tailwind CSS, HTML5, Jinja2
+                </p>
+                <a href="https://kisanmoter.pythonanywhere.com/" target="_blank"
+                    class="px-3 py-2 mr-3 text-white bg-gradient-to-r from-sky-500 to-pink-500 hover:bg-gradient-to-r hover:from-sky-600 hover:to-pink-600 rounded-full">Preview</a>
+                <a href="https://github.com/ratan-kumar-git/Inventory-Management-System" target="_blank"
+                    class="px-3 py-2 text-white bg-gradient-to-r from-sky-500 to-pink-500 hover:bg-gradient-to-r hover:from-sky-600 hover:to-pink-600 rounded-full">GitHub
+                </a>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-gray-200 p-5 rounded-lg hover:rotate-2 ease-in-out delay-150">
+                <img class="rounded-lg bg-cover" src="./images/smart-attendance.webp" alt="ratanImg">
+                <h1 class="text-lg md:text-xl py-4 font-mono font-semibold">Face Recognition Web App</h1>
+                <p class="pb-5 text-base font-serif">
+                    A secure and smart face recognition web app built using Python (Flask), OpenCV, and HTML/CSS. This
+                    system captures, detects, and verifies human faces in real-time using your webcam. It is designed
+                    for user authentication and attendance tracking, making it ideal for classrooms, offices, or secure
+                    login systems.
+                </p>
+                <p class="pb-5 text-base font-serif">
+                    <strong>Tech Stack:</strong> Flask, OpenCV, Face Recognition Library, HTML5, CSS3, Tailwind
+                </p>
+                <a href="#" target="_blank"
+                    class="px-3 py-2 mr-3 text-white bg-gradient-to-r from-sky-500 to-pink-500 hover:bg-gradient-to-r hover:from-sky-600 hover:to-pink-600 rounded-full">Preview</a>
+                <a href="https://github.com/ratan-kumar-git/SmartAttendance-Project" target="_blank"
+                    class="px-3 py-2 text-white bg-gradient-to-r from-sky-500 to-pink-500 hover:bg-gradient-to-r hover:from-sky-600 hover:to-pink-600 rounded-full">GitHub
+                </a>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-gray-200 p-5 rounded-lg hover:rotate-2 ease-in-out delay-150">
+                <img class="rounded-lg bg-cover" src="./images/mill-dairy.webp" alt="ratanImg">
+                <h1 class="text-lg md:text-xl py-4 font-mono font-semibold">Personal Expense Tracker</h1>
+                <p class="pb-5 text-base font-serif">
+                    A lightweight and intuitive web app that helps users track their daily expenses and income. Built
+                    using Python (Flask) and Tailwind CSS. The app features a responsive UI and easy-to-use interface,
+                    making budget management simple and accessible.
+                </p>
+                <p class="pb-5 text-base font-serif">
+                    <strong>Tech Stack:</strong> Flask, SQLite, SQLAlchemy, Tailwind CSS, HTML5, Jinja2
+                </p>
+                <a href="https://milldairy.pythonanywhere.com/" target="_blank"
+                    class="px-3 py-2 mr-3 text-white bg-gradient-to-r from-sky-500 to-pink-500 hover:bg-gradient-to-r hover:from-sky-600 hover:to-pink-600 rounded-full">Preview</a>
+                <a href="https://github.com/ratan-kumar-git/MillDairy-Web" target="_blank"
+                    class="px-3 py-2 text-white bg-gradient-to-r from-sky-500 to-pink-500 hover:bg-gradient-to-r hover:from-sky-600 hover:to-pink-600 rounded-full">GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact us -->
+    <section id="contact" class="max-w-3xl mx-auto px-5 pb-16">
+        <h1
+            class="text-4xl font-bold text-center bg-gradient-to-r from-sky-500 to-pink-500 bg-clip-text text-transparent">
+            Connect With Me</h1>
+        <p class="text-center text-lg bg-gradient-to-r from-sky-500 to-pink-500 bg-clip-text text-transparent mt-2">
+            Interested in collaborating or have an opportunity to discuss? Fill out the form below to get in touch!
+        </p>
+
+        <form class="mt-10 space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">First name</label>
+                    <input type="text" required
+                        class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+                        placeholder="Enter your first name" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Last name</label>
+                    <input type="text" required
+                        class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+                        placeholder="Enter your last name" />
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Email address</label>
+                <input type="email" required
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+                    placeholder="Enter your email address" />
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Purpose to connect</label>
+                <select required
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    <option value="">Select</option>
+                    <option value="hire">Hire Me</option>
+                    <option value="collab">Collaboration</option>
+                    <option value="chat">Just a Chat</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700">What's on Your Mind?</label>
+                <textarea required minlength="40"
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500"
+                    rows="5" placeholder="Enter your message here in minimum 40 characters."></textarea>
+            </div>
+
+            <div class="text-center">
+                <button type="submit"
+                    class="px-6 py-3 rounded-full text-white bg-gradient-to-r from-sky-500 to-pink-500 hover:bg-gradient-to-r hover:from-sky-600 hover:to-pink-600 font-semibold transition-all">
+                    Let's connect!
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer class="px-10 pt-10 bg-gradient-to-r from-sky-500 to-pink-500 text-white rounded-tr-[100px]">
+        <h1 class="text-lg font-semibold">Follow Me</h1>
+        <ul class="border-b-2">
+            <li class="mt-2 hover:text-red-500">
+                <a href="https://www.linkedin.com/in/ratan-kumar-/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> Linkedin
+                </a>
+            </li>
+            <li class="mt-2 hover:text-red-500">
+                <a href="https://github.com/ratan-kumar-git" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </li>
+            <li class="my-2 hover:text-red-500">
+                <a href="https://www.instagram.com/ratan_the_coder/">
+                    <i class="fab fa-instagram"></i> Instgram
+                </a>
+            </li>
+            <li class="my-2 hover:text-red-500">
+                <a href="tel:+917479493985">
+                    <i class="fa-solid fa-phone"></i> Mob: 7479493985
+                </a>
+            </li>
+            <li class="my-2 hover:text-red-500">
+                <a href="mailto:krratan80@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> Email: krratan80@gmai.com
+                </a>
+            </li>
+        </ul>
+        <h1 class="text-center py-5">© 2025 Ratan Kumar. All Rights Reserved.</h1>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="fixed bottom-6 right-4">
+        <a href="#top" class="bg-sky-600 hover:bg-sky-700 text-white px-4 py-3 rounded-full shadow-lg">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu')
+            menu.classList.toggle('hidden')
+        }
+    </script>
+</body>
+
+</html>
